@@ -1,7 +1,6 @@
 package ua.mainacademy.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import ua.mainacademy.dao.UserDAO;
 import ua.mainacademy.model.User;
@@ -13,7 +12,6 @@ import java.util.List;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
-@Profile("prod")
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
